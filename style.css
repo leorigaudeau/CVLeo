@@ -1,0 +1,109 @@
+html body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #F9F8F6;
+}
+
+html body .navBar {
+  width: 100%;
+}
+
+html body .navBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding-left: 0;
+}
+
+html body .navBar ul a {
+  width: 28%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #2EA0FF;
+  border: solid 1px #2EA0FF;
+  border-radius: 3px;
+}
+
+html body .navBar ul a li {
+  list-style-type: none;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+html body .heading {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body .heading .he-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body .heading .he-content .he-avatar {
+  border-radius: 1%;
+  -webkit-box-shadow: 0 3px 10px #2EA0FF;
+          box-shadow: 0 3px 10px #2EA0FF;
+}
+
+html body .heading .he-content .he-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+html body .heading .he-content .he-name p {
+  font-size: 1.3rem;
+  color: #2EA0FF;
+  font-family: "Montserrat", sans-serif;
+}
+
+html body .heading .he-content .he-name .he-wind {
+  margin: 22px 0 0 3px;
+  height: 24px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,82 @@
+$font-stack: 'Montserrat', sans-serif;
+$prim-color: #2AC4E8;
+$prim-dark-color: #2EA0FF;
+$prim-light-color: #3BFFF0;
+$seco-color: #2EFF79;
+$seco-dark-color: #2AE8A4;
+$white-color:#F9F8F6;
+
+html{
+    
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: $white-color;
+        .navBar{
+            width: 100%;
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 100%;
+                padding-left:0; 
+                a{
+                    width:28%;
+                    height: 100%;
+                    font-family: $font-stack;
+                    text-decoration: none;
+                    color: $prim-dark-color;
+                    border: solid 1px $prim-dark-color;
+                    border-radius: 3px;
+                    li{
+                        list-style-type: none;
+                        text-align: center;
+                        font-size: 0.8rem;
+                        
+                        
+                    }
+                }
+            }
+        }
+        .heading{
+            width: 100%;
+            height:600px;
+
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            .he-content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                .he-avatar{
+                    border-radius: 1%;
+                    box-shadow:0 3px 10px $prim-dark-color ;
+
+                }
+                .he-name{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    p{
+                        font-size: 1.3rem;
+                        color: $prim-dark-color;
+                        font-family: $font-stack;
+                        
+                    }
+                    .he-wind{
+                        margin: 22px 0 0 3px;
+                        height: 24px;   
+                    }
+                }
+            }
+        }
+    }
+}
