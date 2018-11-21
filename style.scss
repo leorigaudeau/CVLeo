@@ -1,10 +1,12 @@
 $font-stack: 'Montserrat', sans-serif;
-$prim-color: #2AC4E8;
-$prim-dark-color: #2EA0FF;
-$prim-light-color: #3BFFF0;
-$seco-color: #2EFF79;
-$seco-dark-color: #2AE8A4;
+$prim-color: #00FF29;
+$prim-dark-color: #267F34;
+$prim-light-color: #4CFF69;
 $white-color:#F9F8F6;
+$grey : #717A89;
+$grey-dark-color: #363D50;
+$grey-light-color: #B0BED5;
+$grey-font :#919ba9;
 
 html{
     
@@ -15,9 +17,10 @@ html{
         align-items: center;
         width: 100%;
         height: 100%;
-        background: $white-color;
+        background: $grey;
         .navBar{
             width: 100%;
+            box-shadow: 0 0 20px $grey-dark-color;
             ul{
                 display: flex;
                 flex-direction: row;
@@ -29,14 +32,16 @@ html{
                     height: 100%;
                     font-family: $font-stack;
                     text-decoration: none;
-                    color: $prim-dark-color;
-                    border: solid 1px $prim-dark-color;
+                    color: $grey-font;
                     border-radius: 3px;
                     li{
                         list-style-type: none;
                         text-align: center;
                         font-size: 0.8rem;
-                        
+                        text-transform: uppercase;
+                        &.active{
+                            color: $prim-light-color;
+                        }
                         
                     }
                 }
@@ -51,32 +56,70 @@ html{
             display: flex;
             justify-content: center;
             .he-content{
+                width: 60%;
+                max-width: 1280px;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                align-items: flex-start;
                 justify-content: center;
                 
-                .he-avatar{
-                    border-radius: 1%;
-                    box-shadow:0 3px 10px $prim-dark-color ;
-
-                }
                 .he-name{
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    p{
-                        font-size: 1.3rem;
-                        color: $prim-dark-color;
-                        font-family: $font-stack;
-                        
+                    font-size: 4rem;
+                    color: $white-color;
+                    font-family: $font-stack;
+                    text-transform: uppercase;
+                    
+                    &:First-Letter{
+                        color: $prim-color;
+                        font-size: 5rem;
                     }
-                    .he-wind{
-                        margin: 22px 0 0 3px;
-                        height: 24px;   
+                    .he-namelastletter{
+                        color: $prim-color;
+                        font-size: 5rem;
                     }
+                }
+                .he-desc{
+                    font-size: 2rem;
+                    color: $white-color;
+                    font-family: $font-stack;
+                    text-transform: uppercase;
+                    margin-left: 20px;
                 }
             }
+        }
+        .description{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            .de-content{
+                width: 60%;
+                max-width: 1280px;
+                padding: 20px;
+                background-color: $grey-dark-color;
+                box-shadow: 0 0 10px $grey-dark-color;
+                .de-title{
+                    font-size: 0.8rem;
+                    color: $white-color;
+                    font-family: $font-stack;
+                    text-transform: uppercase;
+                    .de-namelastletter{
+                        color: $prim-color;
+                        font-size: 1.2rem;
+                        margin-left: 2px;
+
+                    }
+                }
+                .de-description{
+                    font-size: 0.8rem;
+                    color: $white-color;
+                    font-family: $font-stack;
+                    text-transform: uppercase;
+                }
+            }
+
         }
     }
 }
