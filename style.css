@@ -38,9 +38,9 @@ html body .navBar ul {
 html body .navBar ul a {
   width: 28%;
   height: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Barlow", sans-serif;
   text-decoration: none;
-  color: #919ba9;
+  color: #F9F8F6;
   border-radius: 3px;
 }
 
@@ -53,6 +53,10 @@ html body .navBar ul a li {
 
 html body .navBar ul a li.active {
   color: #4CFF69;
+}
+
+html body .navBar ul a:hover {
+  color: #00FF29;
 }
 
 html body .heading {
@@ -89,7 +93,7 @@ html body .heading .he-content {
 html body .heading .he-content .he-name {
   font-size: 4rem;
   color: #F9F8F6;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Barlow", sans-serif;
   text-transform: uppercase;
 }
 
@@ -140,7 +144,7 @@ html body .description .de-content {
 html body .description .de-content .de-title {
   font-size: 0.8rem;
   color: #F9F8F6;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Barlow", sans-serif;
   text-transform: uppercase;
 }
 
@@ -151,9 +155,82 @@ html body .description .de-content .de-title .de-namelastletter {
 }
 
 html body .description .de-content .de-description {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #F9F8F6;
   font-family: "Montserrat", sans-serif;
+  font-variant: small-caps;
+}
+
+html body .knowledge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+html body .knowledge .kn-content {
+  width: 60%;
+  max-width: 1280px;
+}
+
+html body .knowledge .kn-content .kn-title {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  color: #F9F8F6;
+  text-align: center;
+}
+
+html body .knowledge .kn-content .kn-title .kn-num {
+  font-size: 2rem;
+  color: #B0BED5;
+}
+
+html body .knowledge .kn-content .kn-title .kn-desc {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+html body .knowledge .kn-content .kn-listing {
+  color: #F9F8F6;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+
+html body .knowledge .kn-content .kn-listing .kn-ligne {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+html body .knowledge .kn-content .kn-listing .kn-ligne .element {
+  width: 100px;
+  text-align: end;
   text-transform: uppercase;
 }
-/*# sourceMappingURL=style.css.map */
+
+html body .knowledge .kn-content .kn-listing .kn-ligne .kn-contentprogressbar {
+  width: 100%;
+}
+
+html body .knowledge .kn-content .kn-listing .kn-ligne .kn-contentprogressbar .kn-progressbar {
+  height: 6px;
+  background-color: #4CFF69;
+  margin: 22px 10px;
+}

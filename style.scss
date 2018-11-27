@@ -1,4 +1,5 @@
-$font-stack: 'Montserrat', sans-serif;
+$font-Barlow: 'Barlow', sans-serif;
+$font-Montserrat:'Montserrat', sans-serif;
 $prim-color: #00FF29;
 $prim-dark-color: #267F34;
 $prim-light-color: #4CFF69;
@@ -9,7 +10,6 @@ $grey-light-color: #B0BED5;
 $grey-font :#919ba9;
 
 html{
-    
     body {
         margin: 0;
         display: flex;
@@ -30,9 +30,9 @@ html{
                 a{
                     width:28%;
                     height: 100%;
-                    font-family: $font-stack;
+                    font-family: $font-Barlow;
                     text-decoration: none;
-                    color: $grey-font;
+                    color: $white-color;
                     border-radius: 3px;
                     li{
                         list-style-type: none;
@@ -41,8 +41,10 @@ html{
                         text-transform: uppercase;
                         &.active{
                             color: $prim-light-color;
-                        }
-                        
+                        } 
+                    }
+                    &:hover{
+                        color: $prim-color;
                     }
                 }
             }
@@ -66,7 +68,7 @@ html{
                 .he-name{
                     font-size: 4rem;
                     color: $white-color;
-                    font-family: $font-stack;
+                    font-family: $font-Barlow;
                     text-transform: uppercase;
                     
                     &:First-Letter{
@@ -81,7 +83,7 @@ html{
                 .he-desc{
                     font-size: 2rem;
                     color: $white-color;
-                    font-family: $font-stack;
+                    font-family: $font-Montserrat;
                     text-transform: uppercase;
                     margin-left: 20px;
                 }
@@ -103,7 +105,7 @@ html{
                 .de-title{
                     font-size: 0.8rem;
                     color: $white-color;
-                    font-family: $font-stack;
+                    font-family: $font-Barlow;
                     text-transform: uppercase;
                     .de-namelastletter{
                         color: $prim-color;
@@ -113,13 +115,63 @@ html{
                     }
                 }
                 .de-description{
-                    font-size: 0.8rem;
+                    font-size: 1rem;
                     color: $white-color;
-                    font-family: $font-stack;
-                    text-transform: uppercase;
+                    font-family: $font-Montserrat;
+                    font-variant: small-caps ;
                 }
             }
 
+        }
+        .knowledge{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            .kn-content{
+                width: 60%;
+                max-width: 1280px;
+                .kn-title{
+                    font-size: 3rem;
+                    font-family: $font-Montserrat;
+                    color: $white-color;
+                    text-align: center;
+                    .kn-num{
+                        font-size: 2rem;
+                        color: $grey-light-color
+                    }
+                    .kn-desc{
+                        font-size: 1.5rem;
+                        font-style: italic;
+                    }
+                }
+                .kn-listing{
+                    color: $white-color;
+                    font-family: $font-Montserrat;
+                    width: 100%;
+                    .kn-ligne{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        .element{
+                            width: 100px;
+                            text-align: end;
+                            text-transform: uppercase;
+                        } 
+                        .kn-contentprogressbar{
+                            width: 100%;
+                            .kn-progressbar{
+                                height: 6px;
+                                background-color: $prim-light-color;
+                                margin: 22px 10px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
         }
     }
 }
