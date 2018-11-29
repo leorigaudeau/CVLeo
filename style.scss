@@ -95,6 +95,7 @@ html{
             align-items: center;
             justify-content: center;
             width: 100%;
+            padding-bottom:100px; 
 
             .de-content{
                 width: 60%;
@@ -129,9 +130,10 @@ html{
             align-items: center;
             justify-content: center;
             width: 100%;
-            
-            background-image: url('Asset/Work-computer.jpg');
-            
+            background-image: url('Asset/Work-computer.png');
+            background-size: cover;
+            background-position: center;
+            padding-bottom:100px; 
             .kn-content{
                 width: 60%;
                 max-width: 1280px;
@@ -176,6 +178,49 @@ html{
                             }
                         }
                         
+                    }
+                }
+            }
+        }
+        .portfolio{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding-bottom:100px; 
+            .po-content{
+                width: 60%;
+                max-width: 1280px;
+                .po-title{
+                    font-size: 3rem;
+                    font-family: $font-Montserrat;
+                    color: $white-color;
+                    text-align: center;
+                    .po-num{
+                        font-size: 2rem;
+                        color: $grey-light-color
+                    }
+                    .po-desc{
+                        font-size: 1.5rem;
+                        font-style: italic;
+                    }
+                }
+                .po-listing{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .card{
+                        // margin: 2px;
+                        width: 30%;
+                        min-width: 200px;
+
+                        .po-img{
+                            height: 150px;
+                            object-fit: cover;
+                            
+                        }
                     }
                 }
             }

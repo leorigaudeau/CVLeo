@@ -130,6 +130,7 @@ html body .description {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  padding-bottom: 100px;
 }
 
 html body .description .de-content {
@@ -176,7 +177,10 @@ html body .knowledge {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  background-image: url("Asset/Work-computer.jpg");
+  background-image: url("Asset/Work-computer.png");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 100px;
 }
 
 html body .knowledge .kn-content {
@@ -243,4 +247,70 @@ html body .knowledge .kn-content .kn-listing .kn-ligne .kn-contentprogressbar .k
   height: 6px;
   background-color: #4CFF69;
   margin: 22px 10px;
+}
+
+html body .portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+html body .portfolio .po-content {
+  width: 60%;
+  max-width: 1280px;
+}
+
+html body .portfolio .po-content .po-title {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  color: #F9F8F6;
+  text-align: center;
+}
+
+html body .portfolio .po-content .po-title .po-num {
+  font-size: 2rem;
+  color: #B0BED5;
+}
+
+html body .portfolio .po-content .po-title .po-desc {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+html body .portfolio .po-content .po-listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body .portfolio .po-content .po-listing .card {
+  width: 30%;
+  min-width: 200px;
+}
+
+html body .portfolio .po-content .po-listing .card .po-img {
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

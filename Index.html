@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>Page Title</title>
@@ -7,16 +8,32 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" href="animated.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Barlow|Montserrat" rel="stylesheet">
-    
+    <link rel="stylesheet" href="ProductCard.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
 </head>
+
 <body>
     <section class="navBar">
         <ul>
-            <a href=""><li class="active">Acceuil </li></a>
-            <a href=""><li>Professonal </li></a>
-            <a href=""><li>Experience </li></a>
-            <a href=""><li>Portfolio </li></a>
-            <a href=""><li>Contact </li></a>
+            <a href="">
+                <li class="active">Acceuil </li>
+            </a>
+            <a href="">
+                <li>Professonal </li>
+            </a>
+            <a href="">
+                <li>Experience </li>
+            </a>
+            <a href="">
+                <li>Portfolio </li>
+            </a>
+            <a href="">
+                <li>Contact </li>
+            </a>
         </ul>
     </section>
     <section class="heading">
@@ -25,7 +42,7 @@
                 Je suis <br> Léo <br> Rigaudeau <span class="he-namelastletter">.</span>
             </h1>
             <p class="he-desc">Etudiant développeur</p>
-            </div>
+        </div>
     </section>
     <section class="description">
         <div class="de-content">
@@ -33,11 +50,13 @@
                 Pourquoi moi <span class="de-namelastletter">?</span>
             </h2>
             <p class="de-description">
-                Ambitieux, polyvalent et avec un fort esprit d’équipe, je suis un jeune étudiant en développement. J'aimerai travailler avec des associés qui puissent me faire évoluer au quotidien. Encore en recherche de ma spécialisation. J'aimerai découvrir différents emplois durant mes 4 ans de formation.    
+                Ambitieux, polyvalent et avec un fort esprit d’équipe, je suis un jeune étudiant en développement.
+                J'aimerai travailler avec des associés qui puissent me faire évoluer au quotidien. Encore en recherche
+                de ma spécialisation. J'aimerai découvrir différents emplois durant mes 4 ans de formation.
             </p>
         </div>
     </section>
-    <section class="knowledge">
+    <section class="knowledge ">
         <div class="kn-content">
             <div class="kn-title">
                 <h2><span class="kn-num">01 :</span> Professionel</h2>
@@ -47,6 +66,28 @@
             </div>
         </div>
     </section>
+    <section class="portfolio">
+        <div class="po-content">
+            <div class="po-title">
+                <h2><span class="po-num">02 :</span> Portfolio</h2>
+                <h3 class="po-desc">Les différents projet dans lesquel j'ai participé :</h3>
+            </div>
+            <div class="po-listing" id="po-listing">
+           
+            </div>
+
+
+
+
+        </div>
+
+
+    </section>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="ProductCardjs.js"></script>
     <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </body>
+
 </html>
