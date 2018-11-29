@@ -176,6 +176,7 @@ html body .knowledge {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  background-image: url("Asset/Work-computer.jpg");
 }
 
 html body .knowledge .kn-content {
@@ -227,6 +228,15 @@ html body .knowledge .kn-content .kn-listing .kn-ligne .element {
 
 html body .knowledge .kn-content .kn-listing .kn-ligne .kn-contentprogressbar {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 html body .knowledge .kn-content .kn-listing .kn-ligne .kn-contentprogressbar .kn-progressbar {

@@ -129,6 +129,9 @@ html{
             align-items: center;
             justify-content: center;
             width: 100%;
+            
+            background-image: url('Asset/Work-computer.jpg');
+            
             .kn-content{
                 width: 60%;
                 max-width: 1280px;
@@ -162,6 +165,9 @@ html{
                         } 
                         .kn-contentprogressbar{
                             width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: nowrap;
                             .kn-progressbar{
                                 height: 6px;
                                 background-color: $prim-light-color;

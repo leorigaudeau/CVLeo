@@ -1,11 +1,11 @@
 var hardskill = [
-    {name:"HTML5",pourcent:75},
-    {name:"JavaScript",pourcent:65},
-    {name:"Sass",pourcent:45},
-    {name:"Git",pourcent:30},
-    {name:"Php",pourcent:10},
-    {name:"Java",pourcent:95},
-    {name:"SQL",pourcent:11}
+    {name:"HTML5",pourcent:85},
+    {name:"JavaScript",pourcent:55},
+    {name:"Sass",pourcent:80},
+    {name:"Git",pourcent:50},
+    {name:"Php",pourcent:30},
+    {name:"Java",pourcent:50},
+    {name:"SQL",pourcent:65}
 ]
 
 
@@ -16,6 +16,6 @@ var knowledge=document.getElementById("kn-listing");
 // }
 
 hardskill.forEach(element => {
-    knowledge.innerHTML+='<div class="kn-ligne"><p class="element">'+element.name+'</p><div class="kn-contentprogressbar"><div class="kn-progressbar animated fadeInLeft"style="width:'+element.pourcent+'%;"></div></div><p class="pourcent">'+element.pourcent+'%</p></div>'
-    console.log(element.pourcent);
+    knowledge.innerHTML+='<div class="kn-ligne"><p class="element">'+element.name+'</p><div class="kn-contentprogressbar"><div class="kn-progressbar animated fadeInLeft"style="width:'+element.pourcent+'%;"></div><p class="pourcent">'+element.pourcent+'%</p></div></div>'
+    
 });
