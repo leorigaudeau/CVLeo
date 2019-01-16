@@ -9,6 +9,7 @@ $grey-dark-color: #363D50;
 $grey-light-color: #B0BED5;
 $grey-font :#919ba9;
 
+
 html{
     body {
         margin: 0;
@@ -21,6 +22,9 @@ html{
         .navBar{
             width: 100%;
             box-shadow: 0 0 20px $grey-dark-color;
+            position: fixed;
+            background: $grey;
+
             ul{
                 display: flex;
                 flex-direction: row;
@@ -49,81 +53,87 @@ html{
                 }
             }
         }
-        .heading{
-            width: 100%;
-            height:600px;
-
-            background-size: cover;
+        .background-profil{
             background-position: center;
-            display: flex;
-            justify-content: center;
-            .he-content{
-                width: 60%;
-                max-width: 1280px;
+            background-size: cover;
+            //background-image: url("Asset/PhotoPro.jpg");
+            .heading{
+                width: 100%;
+                height:600px;
+
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                .he-content{
+                    width: 60%;
+                    max-width: 1280px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    
+                    .he-name{
+                        font-size: 4rem;
+                        color: $white-color;
+                        font-family: $font-Barlow;
+                        text-transform: uppercase;
+                        
+                        &:First-Letter{
+                            color: $prim-color;
+                            font-size: 5rem;
+                        }
+                        .he-namelastletter{
+                            color: $prim-color;
+                            font-size: 5rem;
+                        }
+                    }
+                    .he-desc{
+                        font-size: 2rem;
+                        color: $white-color;
+                        font-family: $font-Montserrat;
+                        text-transform: uppercase;
+                        margin-left: 20px;
+                    }
+                }
+            }
+            .description{
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
                 justify-content: center;
-                
-                .he-name{
-                    font-size: 4rem;
-                    color: $white-color;
-                    font-family: $font-Barlow;
-                    text-transform: uppercase;
-                    
-                    &:First-Letter{
-                        color: $prim-color;
-                        font-size: 5rem;
+                width: 100%;
+
+
+                .de-content{
+                    max-width: 1280px;
+                    padding: 20px;
+                    background-color: $grey-dark-color;
+                    box-shadow: 0 0 10px $grey-dark-color;
+                    padding-bottom: 30px;
+                    .de-title{
+                        font-size: 0.8rem;
+                        color: $white-color;
+                        font-family: $font-Barlow;
+                        text-transform: uppercase;
+                        .de-namelastletter{
+                            color: $prim-color;
+                            font-size: 1.2rem;
+                            margin-left: 2px;
+
+                        }
                     }
-                    .he-namelastletter{
-                        color: $prim-color;
-                        font-size: 5rem;
+                    .de-description{
+                        font-size: 1rem;
+                        color: $white-color;
+                        font-family: $font-Montserrat;
+                        font-variant: small-caps ;
                     }
                 }
-                .he-desc{
-                    font-size: 2rem;
-                    color: $white-color;
-                    font-family: $font-Montserrat;
-                    text-transform: uppercase;
-                    margin-left: 20px;
-                }
-            }
+
+            } 
         }
-        .description{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            padding-bottom:100px; 
-
-            .de-content{
-                width: 60%;
-                max-width: 1280px;
-                padding: 20px;
-                background-color: $grey-dark-color;
-                box-shadow: 0 0 10px $grey-dark-color;
-                .de-title{
-                    font-size: 0.8rem;
-                    color: $white-color;
-                    font-family: $font-Barlow;
-                    text-transform: uppercase;
-                    .de-namelastletter{
-                        color: $prim-color;
-                        font-size: 1.2rem;
-                        margin-left: 2px;
-
-                    }
-                }
-                .de-description{
-                    font-size: 1rem;
-                    color: $white-color;
-                    font-family: $font-Montserrat;
-                    font-variant: small-caps ;
-                }
-            }
-
-        }
+        
         .knowledge{
             display: flex;
             flex-direction: column;
@@ -182,46 +192,174 @@ html{
                 }
             }
         }
-        .portfolio{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        .bck{
             width: 100%;
-            padding-bottom:100px; 
-            .po-content{
-                width: 60%;
-                max-width: 1280px;
-                .po-title{
+            background-image: url(Asset/landscape.jpg);
+            background-position: center;
+            background-size: cover;
+            .portfolio{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding-bottom:100px; 
+                .po-content{
+                    width: 100%;
+                    max-width: 1280px;
+                    .po-title{
+                        font-size: 3rem;
+                        font-family: $font-Montserrat;
+                        color: $white-color;
+                        text-align: center;
+                        .po-num{
+                            font-size: 2rem;
+                            color: $grey-light-color
+                        }
+                        .po-desc{
+                            font-size: 1.5rem;
+                            font-style: italic;
+                        }
+                    }
+                    .po-listing{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        .card{
+                            // margin: 2px;
+                            width: 30%;
+                            min-width: 200px;
+    
+                            .po-img{
+                                height: 150px;
+                                object-fit: cover;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            .Experience{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 100px;
+               
+                .Ex-title{
                     font-size: 3rem;
                     font-family: $font-Montserrat;
                     color: $white-color;
                     text-align: center;
-                    .po-num{
+                    margin-bottom: 50px;
+                    .kn-num{
                         font-size: 2rem;
                         color: $grey-light-color
                     }
-                    .po-desc{
-                        font-size: 1.5rem;
-                        font-style: italic;
-                    }
                 }
-                .po-listing{
+                .Content{
+                    width: 60%;
+                    max-width: 1280px;
                     display: flex;
                     flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    .card{
-                        // margin: 2px;
-                        width: 30%;
-                        min-width: 200px;
-
-                        .po-img{
-                            height: 150px;
-                            object-fit: cover;
-                            
-                        }
+                    align-items: center;
+                    justify-content: space-between;
+                    text-align: end;
+                    margin-bottom: 50px;
+                    p{
+                        margin: 0;
+                        padding: 0;
                     }
+                    
+                    
+                    .gauche{
+                        width: 48%;
+                        border-right: #00FF29 solid 2px;
+                        margin-right:10px;
+                        padding-right: 30px;
+                        
+                    }
+                    .droit{
+                        text-align: start;
+                        width: 48%;
+                        margin-left:10px;
+                        padding-left: 30px;
+                        border-left: #00FF29 solid 2px;
+                    
+                    }
+                    .ctn{
+                        color: $white-color;
+                        font-family: $font-Montserrat;
+                    }
+                    .Date{
+                        color: $prim-color;
+                        font-family: $font-Montserrat;
+                        font-size: 1.3rem;
+                        margin-bottom: 5px;
+                    }
+                    .entreprise{
+                        color: $white-color;
+                        font-family: $font-Montserrat;
+                        font-size: 1.3rem;
+                        margin-top: 0;
+                        padding-top: 0;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+                    .titre{
+                        color: $white-color;
+                        font-family: $font-Montserrat;
+                        font-size: 1.3rem;
+                        font-weight: bold;
+                    }   
+                    img{
+                        margin: 0 50px;
+                        max-width: 250px;
+                    }
+                }
+            }
+        }
+       
+        .Contact{ 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-top:-50px;
+            .co-content{
+                width: 60%;
+                max-width: 1280px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                background-color: $grey-dark-color;
+                padding-bottom:20px; 
+                .co-text{
+                    padding:50px 0 0 50px ;
+                    width: 30%;
+                     .co-title{
+                        color: $white-color;
+                        font-family: $font-Montserrat;
+                        
+                    }
+                    p{
+                        color: $white-color;
+                        font-family: $font-Montserrat;
+                    }
+                    img{
+                        width: 30px;
+                    }
+                }
+               
+                .co-callToAction{
+                    text-align: center;
+                    width: 70%;
+                    padding: 20px;
+                    color: $white-color;
+                    font-family: $font-Montserrat;
+                    padding:50px 0 0 0 ;
                 }
             }
         }

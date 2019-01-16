@@ -13,50 +13,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
 </head>
 
 <body>
     <section class="navBar">
         <ul>
-            <a href="">
-                <li class="active">Acceuil </li>
+            <a href="#Acceuil">
+                <li>Acceuil </li>
             </a>
-            <a href="">
+            <a href="#Professonal">
                 <li>Professonal </li>
             </a>
-            <a href="">
+            <a href="#Experience">
                 <li>Experience </li>
             </a>
-            <a href="">
+            <a href="#Portfolio">
                 <li>Portfolio </li>
             </a>
-            <a href="">
+            <a href="#Contact">
                 <li>Contact </li>
             </a>
         </ul>
     </section>
-    <section class="heading">
-        <div class="he-content">
-            <h1 class="he-name">
-                Je suis <br> Léo <br> Rigaudeau <span class="he-namelastletter">.</span>
-            </h1>
-            <p class="he-desc">Etudiant développeur</p>
-        </div>
-    </section>
-    <section class="description">
-        <div class="de-content">
-            <h2 class="de-title">
-                Pourquoi moi <span class="de-namelastletter">?</span>
-            </h2>
-            <p class="de-description">
-                Ambitieux, polyvalent et avec un fort esprit d’équipe, je suis un jeune étudiant en développement.
-                J'aimerai travailler avec des associés qui puissent me faire évoluer au quotidien. Encore en recherche
-                de ma spécialisation. J'aimerai découvrir différents emplois durant mes 4 ans de formation.
-            </p>
-        </div>
-    </section>
-    <section class="knowledge ">
+
+    <div class="background-profil">
+        <section class="heading" id="Acceuil">
+            <div class="he-content">
+                <h1 class="he-name">
+                    Je suis <br> Léo <br> Rigaudeau <span class="he-namelastletter">.</span>
+                </h1>
+                <p class="he-desc">Etudiant développeur</p>
+            </div>
+        </section>
+        <section class="description">
+            <div class="de-content">
+                <h2 class="de-title">
+                    Pourquoi moi <span class="de-namelastletter">?</span>
+                </h2>
+                <p class="de-description">
+                    Ambitieux, polyvalent et avec un fort esprit d’équipe, je suis un jeune étudiant en développement.
+                    J'aimerai travailler avec des associés qui puissent me faire évoluer au quotidien. Encore en
+                    recherche
+                    de ma spécialisation. J'aimerai découvrir différents emplois durant mes 4 ans de formation.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <section class="knowledge " id="Professonal">
         <div class="kn-content">
             <div class="kn-title">
                 <h2><span class="kn-num">01 :</span> Professionel</h2>
@@ -66,22 +71,105 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <div class="bck">
+    <section class="portfolio" id="Portfolio">
         <div class="po-content">
             <div class="po-title">
                 <h2><span class="po-num">02 :</span> Portfolio</h2>
-                <h3 class="po-desc">Les différents projet dans lesquel j'ai participé :</h3>
+                <h3 class="po-desc">Les différents projets auxquels j'ai participés:</h3>
             </div>
             <div class="po-listing" id="po-listing">
-           
+
             </div>
+        </div>
+    </section>
 
+    <section class="Experience" id="Experience">
+        <h2 class="Ex-title"><span class="kn-num">03 :</span> Expériences</h2>
+        <div class="Content ">
+            <div class="gauche ctn">
+                <h3 class="Date">2017-Aujourd'hui</h2>
+                    <h2 class="entreprise">Ynov Nantes Campus </h2>
+                    <p class="titre">Etudiant</p>
+                    <p class="desc"><b>Deuxième Année :</b> Application Mobile, Java, Symfony 4, postgre SQL et
+                        Intégration Web, CCNA 2<br>
+                        <b>Premier Année :</b> Html/Css, Git, SQL, Javascript, linux, CCNA 1
+                    </p>
 
+            </div>
+            <img src="Asset/ynov-informatique.png" alt="">
+        </div>
+        <div class="Content ">
 
+            <img src="Asset/logo-2018.svg" alt="">
+            <div class="droit ctn">
+                <h3 class="Date">2018</h2>
+                    <h2 class="entreprise">Fleury Michon </h2>
+                    <p class="titre">Stagiaire</p>
+                    <p class="desc">Découvert du réseau dans le monde professionnel, ce stage ma permis de choisir ma
+                        spécialité en découvrant comment une infrastructure réseau d’un grand groupe comme Fleury
+                        Michon.
+                    </p>
 
+            </div>
+        </div>
+        <div class="Content ">
+            <div class="gauche ctn">
+                <h3 class="Date">2017-2018</h2>
+                    <h2 class="entreprise">Puy du Fou </h2>
+                    <p class="titre">Acteur</p>
+                    <p class="desc">Saisonnier dans le Signe du Triomphe, Le monde du spectacle demande de la rigueur
+                        et de l’entrainement, il m’a donné une facilité à parler et à s’entraider dans une équipe
+                    </p>
+
+            </div>
+            <img src="Asset/téléchargement.png" alt="">
+        </div>
+        <div class="Content ">
+
+            <div></div>
+            <div class="droit ctn">
+                <h3 class="Date">2015-2017</h2>
+                    <h2 class="entreprise">Bac S</h2>
+                    <p class="titre">Spécialité Math</p>
+                    <p class="desc">Obtenu avec une mention Assez-Bien.</p>
+
+            </div>
+        </div>
+        <div class="Content ">
+            <div class="gauche ctn">
+                <h3 class="Date">2016</h2>
+                    <h2 class="entreprise">Comrest</h2>
+                    <p class="titre">Vendeur</p>
+                    <p class="desc">Vendeur dans le Parc du Puy du Fou, Cette saison m’a permis d’avoir un contact avec
+                        les visiteurs et une première approche dans le monde du travail.
+                    </p>
+
+            </div>
+            <img src="Asset/COMREST.jpg" alt="">
         </div>
 
-
+    </section>
+</div>
+    <section class="Contact" id="Contact">
+        <div class="co-content">
+            <div class="co-text">
+                <h2 class="co-title">Contact</h2>
+                <p>07 50 90 89 46</p>
+                <p>rigauleo@gmail.com</p>
+                <p>
+                    4 Rue des Bourdonnirères<br>
+                    44200, Nantes
+                </p>
+                <a href="https://www.linkedin.com/in/léo-rigaudeau-338751152">
+                    <img src="https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_60,h_60,al_c,q_80,usm_0.66_1.00_0.01/7528824071724d12a3e6c31eee0b40d4.webp"
+                        alt="linkedin">
+                </a>
+            </div>
+            <h2 class="co-callToAction">
+                Alors, Quand peud seriez-vous disponible pour une rencontre ?
+            </h2>
+        </div>
     </section>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
