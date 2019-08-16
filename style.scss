@@ -338,7 +338,7 @@ html{
                 padding-bottom:20px; 
                 .co-text{
                     padding:50px 0 0 50px ;
-                    width: 30%;
+                    width: 30vw;
                      .co-title{
                         color: $white-color;
                         font-family: $font-Montserrat;
@@ -355,13 +355,43 @@ html{
                
                 .co-callToAction{
                     text-align: center;
-                    width: 70%;
+                    width: 70vw;
                     padding: 20px;
                     color: $white-color;
                     font-family: $font-Montserrat;
                     padding:50px 0 0 0 ;
+                    font-size: 3vw;
                 }
             }
         }
+        @media screen and (max-width: 640px) {
+            .Content{
+                max-width: 1280px;
+                display: block;
+                text-align: end;
+                .kn-imgEx {
+                display:none
+                }
+                .gauche{
+                    width: 98% !important;
+                    border-right: #00FF29 solid 2px;
+                    margin-right:0px;
+                    padding-right: 0px;
+                    
+                }
+                .droit{
+                    text-align: start;
+                    width: 98% !important;
+                    margin-left:0px;
+                    padding-left: 0px;
+                    border-left: #00FF29 solid 2px;
+                
+                }
+            }
+            .co-callToAction{
+                display: none;
+            }
+        }
+        
     }
 }

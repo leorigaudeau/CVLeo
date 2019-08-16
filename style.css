@@ -467,7 +467,7 @@ html body .Contact .co-content {
 
 html body .Contact .co-content .co-text {
   padding: 50px 0 0 50px;
-  width: 30%;
+  width: 30vw;
 }
 
 html body .Contact .co-content .co-text .co-title {
@@ -486,9 +486,37 @@ html body .Contact .co-content .co-text img {
 
 html body .Contact .co-content .co-callToAction {
   text-align: center;
-  width: 70%;
+  width: 70vw;
   padding: 20px;
   color: #F9F8F6;
   font-family: "Montserrat", sans-serif;
   padding: 50px 0 0 0;
+  font-size: 3vw;
+}
+
+@media screen and (max-width: 640px) {
+  html body .Content {
+    max-width: 1280px;
+    display: block;
+    text-align: end;
+  }
+  html body .Content .kn-imgEx {
+    display: none;
+  }
+  html body .Content .gauche {
+    width: 98% !important;
+    border-right: #00FF29 solid 2px;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  html body .Content .droit {
+    text-align: start;
+    width: 98% !important;
+    margin-left: 0px;
+    padding-left: 0px;
+    border-left: #00FF29 solid 2px;
+  }
+  html body .co-callToAction {
+    display: none;
+  }
 }
